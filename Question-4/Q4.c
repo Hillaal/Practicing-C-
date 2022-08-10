@@ -4,7 +4,8 @@
 
 int main(){
 
-    float redius,area,circumference;
+    float redius;
+    double area,circumference;
 
     printf("Enter Redius\n");
     scanf("%f",&redius);
@@ -12,8 +13,8 @@ int main(){
     area = PI*redius*redius;
     circumference = 2 * PI * redius;
 
-    printf("Area = %f  \n",area);
-    printf("circumference = %f  \n",circumference);
+    printf("Area = %lf  \n",area);
+    printf("circumference = %lf  \n",circumference);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 

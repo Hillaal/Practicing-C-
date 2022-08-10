@@ -4,12 +4,12 @@ float CelsiusTOFahrenheit(float degreeCelsius);
 
 int main(){
 
-    float degreeC,degreeF;
+    double degreeC,degreeF;
     printf("Enter Degree Celsius\n");
-    scanf("%f",&degreeC);
+    scanf("%lf",&degreeC);
 
     degreeF = CelsiusTOFahrenheit(degreeC);
-    printf("Degree Fahrenheit = %f  A\n",degreeF);
+    printf("Degree Fahrenheit = %lf  \n",degreeF);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
