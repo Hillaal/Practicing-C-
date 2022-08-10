@@ -1,1 +1,1 @@
-### Write a program that print your name and your grade in a new line
+### Write a program to print the ASCII value of a character input by the user.
