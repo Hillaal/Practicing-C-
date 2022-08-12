@@ -1,9 +1,9 @@
 #include <stdio.h>
-
+#include <math.h>
 
 int main(){
 
-    int num,counter,flag = 0;
+    int num,root;
 
     /*scan number from the user and make sure he entered positive number*/
     do
@@ -13,21 +13,11 @@ int main(){
     }
     while(num <= 0);
 
+    /*get square root of number*/
+    root = sqrt(num);
+
     /*check if number is  perfect square or not*/
-    for(counter = 1;counter <= (int)(num/2); counter++)
-    {
-        if(num == (counter * counter))
-        {
-            flag = 1;
-            break;
-        }
-        else
-        {
-        }
-
-    }
-
-    if(1 == flag)
+    if (num == (root*root))
     {
         printf("Perfect Square");
     }
@@ -35,6 +25,8 @@ int main(){
     {
         printf("NOT Perfect Square");
     }
+
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
