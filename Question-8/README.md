@@ -1,1 +1,1 @@
-### Write a program that takes three integers, and prints out the smallest number
+### Write a program that reads a positive integer and checks if it is a perfect square.
