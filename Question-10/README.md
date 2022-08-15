@@ -1,1 +1,1 @@
-### Write a program that reads a student grade percentage and prints "Excellent" if his grade is greater than or equal 85, "Very Good" for 75 or greater; "Good" for 65, "Pass" for 50, "Fail" for less than 50
+### Write a program to make a simple calculator usingswitch-case. The calculator takes the operation (+ or – or * or /) and takes the two input arguments and print the results.
