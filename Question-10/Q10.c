@@ -1,20 +1,20 @@
 #include <stdio.h>
 
- void calculate(char op,int num1,int num2);
+ void calculate(char op,float num1,float num2);
 
 int main(){
 
-    long int num1,num2;
+    float num1,num2;
     char operation;
 
-    printf("Enter Operation\n");
+    printf("Enter Operation from: + or - or * or / \n");
     scanf("%c",&operation);
 
     printf("Enter First Number\n");
-    scanf("%d",&num1);
+    scanf("%f",&num1);
 
     printf("Enter Second Number\n");
-    scanf("%d",&num2);
+    scanf("%f",&num2);
 
     calculate(operation,num1,num2);
 
@@ -25,9 +25,9 @@ int main(){
 
 
 
-void calculate(char op,int num1,int num2)
+void calculate(char op,float num1,float num2)
 {
-    long int result;
+    double result;
 
     switch(op){
 
@@ -64,7 +64,7 @@ void calculate(char op,int num1,int num2)
 
     }
 
-    printf("result = %d\n",result);
+    printf("%f %c %f = %lf\n",num1,op,num2,result);
 
 }
 
