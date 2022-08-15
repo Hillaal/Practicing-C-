@@ -1,32 +1,38 @@
 #include <stdio.h>
-#include <math.h>
 
 int main(){
 
-    int num,root;
+    int grade;
 
-    /*scan number from the user and make sure he entered positive number*/
+    /*scan grade from the user and make sure he entered positive number*/
     do
     {
-        printf("Enter Positive Number \n");
-        scanf("%d",&num);
+        printf("Enter Grade Percentage\n");
+        scanf("%d",&grade);
     }
-    while(num <= 0);
+    while(grade < 0);
 
-    /*get square root of number*/
-    root = sqrt(num);
 
-    /*check if number is  perfect square or not*/
-    if (num == (root*root))
+    if (grade >= 85)
     {
-        printf("Perfect Square");
+        printf("Excellent");
+    }
+    else if((grade < 85) && (grade >= 75) )
+    {
+        printf("Very Good");
+    }
+    else if((grade < 75) && (grade >= 65) )
+    {
+        printf("Good");
+    }
+    else if((grade < 65) && (grade >= 50) )
+    {
+        printf("Pass");
     }
     else
     {
-        printf("NOT Perfect Square");
+        printf("Fail");
     }
-
-
 
     getch();    /*to stop cmd from closing after running the .exe*/
 

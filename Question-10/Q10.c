@@ -1,36 +1,71 @@
 #include <stdio.h>
-#include <math.h>
+
+ void calculate(char op,int num1,int num2);
 
 int main(){
 
-    int num,root;
+    long int num1,num2;
+    char operation;
 
-    /*scan number from the user and make sure he entered positive number*/
-    do
-    {
-        printf("Enter Positive Number \n");
-        scanf("%d",&num);
-    }
-    while(num <= 0);
+    printf("Enter Operation\n");
+    scanf("%c",&operation);
 
-    /*get square root of number*/
-    root = sqrt(num);
+    printf("Enter First Number\n");
+    scanf("%d",&num1);
 
-    /*check if number is  perfect square or not*/
-    if (num == (root*root))
-    {
-        printf("Perfect Square");
-    }
-    else
-    {
-        printf("NOT Perfect Square");
-    }
+    printf("Enter Second Number\n");
+    scanf("%d",&num2);
 
-
+    calculate(operation,num1,num2);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
     return 0;
+}
+
+
+
+void calculate(char op,int num1,int num2)
+{
+    long int result;
+
+    switch(op){
+
+        case '*' :
+        {
+            result = num1 * num2;
+            break;
+        }
+
+        case '/' :
+        {
+            result = num1 / num2;
+            break;
+        }
+
+        case '+':
+        {
+            result = num1 + num2;
+            break;
+        }
+
+        case '-':
+        {
+            result = num1 - num2;
+            break;
+        }
+
+        default:
+            {
+               printf("Enter Valid Operation");
+               return;
+            }
+
+
+    }
+
+    printf("result = %d\n",result);
+
 }
 
 
