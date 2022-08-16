@@ -1,1 +1,1 @@
-### Print sum of first 100 integers. (With data validation)
+### Write a program that reads a positive integer and computes the factorial
