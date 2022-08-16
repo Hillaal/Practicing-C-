@@ -3,20 +3,24 @@
 
 int main(){
 
-    int counter,sum = 0;
+    long int counter;
+    long int num;
+    long int factorial = 1;
 
-    for(counter = 1; counter <= 100; counter++)
+    do
     {
-        sum = sum + counter;
+      printf("Enter Positive Integer\n");
+      scanf("%d",&num);
+    }
+    while(num < 0);
+
+    for(counter = 1; counter <= num; counter++)
+    {
+        factorial = factorial * counter;
     }
 
-    if(sum == 5050)
-    {
-         printf("sum of the first 100 integers = %d",sum);
-    }
-    else
-    {
-    }
+    printf("Factorial = %d\n",factorial);
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
