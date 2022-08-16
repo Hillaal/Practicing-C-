@@ -5,7 +5,7 @@ int main(){
 
     long int counter;
     long int num;
-    long int factorial = 1;
+    long long factorial = 1;
 
     do
     {
