@@ -1,22 +1,46 @@
 #include <stdio.h>
 
+#define TRUE    (1)
+#define FALSE   (0)
 
-int main(){
 
-    int counter,sum = 0;
+int main()
+{
 
-    for(counter = 1; counter <= 100; counter++)
+    long int counter;
+    long int num;
+    unsigned char prime = TRUE;
+
+    do
     {
-        sum = sum + counter;
+      printf("Enter Positive Integer\n");
+      scanf("%d",&num);
+    }
+    while(num < 0);
+
+    for(counter = 2; counter <= (long int)(num/2); counter++)
+    {
+        if( (num % counter) == 0)
+        {
+            prime = FALSE;
+            break;
+        }
+        else
+        {
+            //prime
+        }
     }
 
-    if(sum == 5050)
+    if(prime == TRUE)
     {
-         printf("sum of the first 100 integers = %d",sum);
+        printf("Number Is Prime\n");
     }
     else
     {
+        printf("Number Is Not Prime\n");
     }
+
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
