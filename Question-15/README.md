@@ -1,1 +1,1 @@
-###  Write a program that reads a positive integer and checks if it is a prime
+### Write a program to calculate the power of a number. The number and its power are input from user.
