@@ -1,46 +1,31 @@
 #include <stdio.h>
 
-#define TRUE    (1)
-#define FALSE   (0)
 
 
 int main()
 {
 
-    long int counter;
+    long long result = 1;
     long int num;
-    unsigned char prime = TRUE;
+    long int power;
+    long int counter;
+
+    printf("Enter number\n");
+    scanf("%d",&num);
 
     do
     {
-      printf("Enter Positive Integer\n");
-      scanf("%d",&num);
+      printf("Enter Positive Power\n");
+      scanf("%d",&power);
     }
     while(num < 0);
 
-    for(counter = 2; counter <= (long int)(num/2); counter++)
+    for(counter = 1; counter <= power; counter++)
     {
-        if( (num % counter) == 0)
-        {
-            prime = FALSE;
-            break;
-        }
-        else
-        {
-            //prime
-        }
+        result = result * num;
     }
 
-    if(prime == TRUE)
-    {
-        printf("Number Is Prime\n");
-    }
-    else
-    {
-        printf("Number Is Not Prime\n");
-    }
-
-
+    printf("result = %d",result);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
