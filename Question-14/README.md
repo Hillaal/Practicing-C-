@@ -1,1 +1,1 @@
-###  Write a program that reads a positive integer and checks if it is a prime
+###   Write a program to display English alphabets from A to Z.
