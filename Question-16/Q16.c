@@ -4,28 +4,27 @@
 
 int main()
 {
-
-    long long result = 1;
     long int num;
-    long int power;
-    long int counter;
+    long int result = 0;
+    long int digit;
 
-    printf("Enter number\n");
-    scanf("%d",&num);
+
 
     do
     {
-      printf("Enter Positive Power\n");
-      scanf("%d",&power);
+        printf("Enter positive number to be reversed\n");
+        scanf("%d",&num);
     }
     while(num < 0);
 
-    for(counter = 1; counter <= power; counter++)
+    while(num)
     {
-        result = result * num;
+        digit = num % 10;
+        result = (result*10) + digit;
+        num = (long int) (num / 10);
     }
 
-    printf("result = %d",result);
+    printf("reversed number is: %d",result);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
