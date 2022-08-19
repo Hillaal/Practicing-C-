@@ -1,7 +1,1 @@
-### Write a program to display inverted half pyramid using stars pattern.
-
-### * * * * *
-### * * * *
-### * * *
-### * *
-### *
+### Write a program to display a full pyramid using stars pattern.
