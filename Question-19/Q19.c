@@ -4,27 +4,23 @@
 
 int main()
 {
-    long int num;
-    long int digitCounter = 0;
+   unsigned char counterY;
+   unsigned char counterX;
 
 
-
-    do
+    for (counterY = 5; counterY >=1 ; counterY--)
     {
-        printf("Enter positive Decimal number\n");
-        scanf("%d",&num);
-    }
-    while(num < 0);
+        for(counterX = 1; counterX <=counterY ; counterX++)
+        {
+            printf("* ");
+        }
 
-    if(0 == num){digitCounter = 1;}
-
-    while(num)
-    {
-        digitCounter = digitCounter + 1;
-        num = (long int) (num / 10);
+        printf("\n");
     }
 
-    printf("\nNumber of Digits is: %d\n",digitCounter);
+
+
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
