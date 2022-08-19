@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-
+#define ROWS    (7)
 
 int main()
 {
@@ -8,16 +8,18 @@ int main()
    unsigned char counterX;
 
 
-    for (counterY = 5; counterY >=1 ; counterY--)
+    for (counterY = 0; counterY < ROWS ; counterY++)
     {
-        for(counterX = 1; counterX <=counterY ; counterX++)
+        for(counterX = counterY; counterX < ROWS - 1 ; counterX++)
         {
-            printf("* ");
+            printf(" ");
         }
-
+        for(counterX = 0; counterX < (2*counterY) +1 ; counterX++)
+        {
+            printf("*");
+        }
         printf("\n");
     }
-
 
 
 
