@@ -1,1 +1,7 @@
-### Write a program to count number of digits in a decimal number.
+### Write a program to display inverted half pyramid using stars pattern.
+
+### * * * * *
+### * * * *
+### * * *
+### * *
+### *
