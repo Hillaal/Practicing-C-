@@ -1,39 +1,29 @@
 #include <stdio.h>
 
+#define TRUE    (1)
+#define FALSE   (0)
 
 
+unsigned char CheckAlphabet(char x);
 
 
 int main()
 {
-   unsigned char counterY;
-   unsigned char counterX;
-   unsigned char rowsNo;
+    unsigned char alphabetValidation;
+    char character;
 
-   do{
-        printf("ENTER NUMBER OF ROWS\n");
-        scanf("%d",&rowsNo);
-        printf("\n");
-   }while(rowsNo <= 0);
+    printf("Enter character\n");
+    scanf("%c",&character);
 
-    for (counterY = 1; counterY <= rowsNo ; counterY++)
+    alphabetValidation = CheckAlphabet(character);
+
+    if(alphabetValidation == TRUE)
     {
-        for(counterX = 1; counterX <=rowsNo ; counterX++)
-        {
-            if ( (counterX == counterY ) || (counterX == rowsNo - counterY + 1 ))
-            {
-                printf(" * ");
-
-            }
-            else
-            {
-                printf(" ");
-
-            }
-
-        }
-
-        printf("\n");
+        printf("Alphabet");
+    }
+    else
+    {
+        printf("Not Alphabet");
     }
 
 
@@ -42,3 +32,17 @@ int main()
     return 0;
 }
 
+
+
+unsigned char CheckAlphabet(char x)
+{
+    if( (x >= 65) && (x <= 122) )
+    {
+        return TRUE;
+    }
+    else
+    {
+        return FALSE;
+    }
+
+}
