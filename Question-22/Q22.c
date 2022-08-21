@@ -1,44 +1,28 @@
 #include <stdio.h>
 
 
-
+long long Cube(int num);
 
 
 int main()
 {
-   unsigned char counterY;
-   unsigned char counterX;
-   unsigned char rowsNo;
+    long long result;
+    int  num;
 
-   do{
-        printf("ENTER NUMBER OF ROWS\n");
-        scanf("%d",&rowsNo);
-        printf("\n");
-   }while(rowsNo <= 0);
+    printf("Enter Number\n");
+    scanf("%d",&num);
 
-    for (counterY = 1; counterY <= rowsNo ; counterY++)
-    {
-        for(counterX = 1; counterX <=rowsNo ; counterX++)
-        {
-            if ( (counterX == counterY ) || (counterX == rowsNo - counterY + 1 ))
-            {
-                printf(" * ");
+    result = Cube(num);
 
-            }
-            else
-            {
-                printf(" ");
-
-            }
-
-        }
-
-        printf("\n");
-    }
-
+    printf("Result = %d",result);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
     return 0;
 }
 
+
+long long Cube(int num)
+{
+    return num*num*num;
+}
