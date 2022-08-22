@@ -1,20 +1,28 @@
 #include <stdio.h>
 
+#define POSITIVE    (1)
+#define NEGATIVE    (0)
 
-long long Cube(int num);
+unsigned char CheckNegative(int num);
 
 
 int main()
 {
-    long long result;
     int  num;
 
     printf("Enter Number\n");
     scanf("%d",&num);
 
-    result = Cube(num);
+    if(CheckNegative(num) == NEGATIVE)
+    {
+        printf("Negative Number\n");
+    }
+    else
+    {
+        printf("Positive Number\n");
+    }
 
-    printf("Result = %d",result);
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
@@ -22,7 +30,15 @@ int main()
 }
 
 
-long long Cube(int num)
+unsigned char CheckNegative(int num)
 {
-    return num*num*num;
+    if(num < 0)
+    {
+        return NEGATIVE;
+    }
+    else
+    {
+        return POSITIVE;
+    }
+
 }
