@@ -1,1 +1,1 @@
-###  Write a C Function that prints the cube of any number.
+###  Write a C Function that check if the number if positive or negative.
