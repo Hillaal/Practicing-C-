@@ -1,20 +1,22 @@
 #include <stdio.h>
 
+ void calculate(char op,float num1,float num2);
 
-long long Cube(int num);
+int main(){
 
+    float num1,num2;
+    char operation;
 
-int main()
-{
-    long long result;
-    int  num;
+    printf("Enter Operation from: + or - or * or / \n");
+    scanf("%c",&operation);
 
-    printf("Enter Number\n");
-    scanf("%d",&num);
+    printf("Enter First Number\n");
+    scanf("%f",&num1);
 
-    result = Cube(num);
+    printf("Enter Second Number\n");
+    scanf("%f",&num2);
 
-    printf("Result = %d",result);
+    calculate(operation,num1,num2);
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
@@ -22,7 +24,48 @@ int main()
 }
 
 
-long long Cube(int num)
+
+void calculate(char op,float num1,float num2)
 {
-    return num*num*num;
+    double result;
+
+    switch(op){
+
+        case '*' :
+        {
+            result = num1 * num2;
+            break;
+        }
+
+        case '/' :
+        {
+            result = num1 / num2;
+            break;
+        }
+
+        case '+':
+        {
+            result = num1 + num2;
+            break;
+        }
+
+        case '-':
+        {
+            result = num1 - num2;
+            break;
+        }
+
+        default:
+            {
+               printf("Error: Enter Valid Operation");
+               return;
+            }
+
+
+    }
+
+    printf("%f %c %f = %lf\n",num1,op,num2,result);
+
 }
+
+
