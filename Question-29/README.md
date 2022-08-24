@@ -1,1 +1,1 @@
-###  Write C Function that converts the any letter from lowercase to uppercase.
+###  Write a C Function that display Prime Numbers between Intervals (two numbers) by Making Function.
