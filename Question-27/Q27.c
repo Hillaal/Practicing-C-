@@ -1,22 +1,25 @@
 #include <stdio.h>
 
- void calculate(char op,float num1,float num2);
+unsigned char ToUpperCase(unsigned char character);
 
-int main(){
+int main(void){
 
-    float num1,num2;
-    char operation;
+    char character;
 
-    printf("Enter Operation from: + or - or * or / \n");
-    scanf("%c",&operation);
+    printf("Enter Character\n");
 
-    printf("Enter First Number\n");
-    scanf("%f",&num1);
+    scanf("%c",&character);
 
-    printf("Enter Second Number\n");
-    scanf("%f",&num2);
+    if((character >= 'a') && (character <='z'))
+    {
+        printf("\n%c\n",ToUpperCase(character));
+    }
+    else
+    {
+        printf("\nInvaild input character");
+    }
 
-    calculate(operation,num1,num2);
+
 
     getch();    /*to stop cmd from closing after running the .exe*/
 
@@ -25,47 +28,7 @@ int main(){
 
 
 
-void calculate(char op,float num1,float num2)
+unsigned char ToUpperCase(unsigned char character)
 {
-    double result;
-
-    switch(op){
-
-        case '*' :
-        {
-            result = num1 * num2;
-            break;
-        }
-
-        case '/' :
-        {
-            result = num1 / num2;
-            break;
-        }
-
-        case '+':
-        {
-            result = num1 + num2;
-            break;
-        }
-
-        case '-':
-        {
-            result = num1 - num2;
-            break;
-        }
-
-        default:
-            {
-               printf("Error: Enter Valid Operation");
-               return;
-            }
-
-
-    }
-
-    printf("%f %c %f = %lf\n",num1,op,num2,result);
-
+    return (character - 32);
 }
-
-
