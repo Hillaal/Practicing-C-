@@ -1,1 +1,1 @@
-###  Write C Function that converts the any letter from lowercase to uppercase.
+###  Write a C Function that reads two integers and checks if the first is multiple of the second.
