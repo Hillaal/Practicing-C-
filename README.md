@@ -46,5 +46,23 @@ C Programming Questions
 
 [Q-21](https://github.com/Hillaal/Practicing-C-/tree/main/Question-21) - Write a program to display cross or X-shape using stars pattern.
 
+[Q-22](https://github.com/Hillaal/Practicing-C-/tree/main/Question-22) - Write a C Function that prints the cube of any number.
+
+[Q-23](https://github.com/Hillaal/Practicing-C-/tree/main/Question-23) - Write a C Function that takes one character and checks if it alphabet or not.
+
+[Q-24](https://github.com/Hillaal/Practicing-C-/tree/main/Question-24) - Write a C Function that check if the number if positive or negative.
+
+[Q-25](https://github.com/Hillaal/Practicing-C-/tree/main/Question-25) - Write a C Function that return the addition or subtraction or multiplication or division for two numbers. The function should take the required operation and two numbers as arguments. It also should check that the input operation is one of those operation that mentioned before and if not it should return error. The function should be implemented using switch case.
+
+[Q-26](https://github.com/Hillaal/Practicing-C-/tree/main/Question-26) - Write a C function to check if the input is an even number or an odd number, if even number return 0 if odd number return 1.
+Example:
+Input 7, Output = 1 (Odd)
+Input 6, Output = 0 (Even)
+
+[Q-27](https://github.com/Hillaal/Practicing-C-/tree/main/Question-27) - Write C Function that converts the any letter from lowercase to uppercase.
+
+[Q-28](https://github.com/Hillaal/Practicing-C-/tree/main/Question-28) - Write a C Function that reads two integers and checks if the first is multiple of the second.
+
+[Q-29](https://github.com/Hillaal/Practicing-C-/tree/main/Question-29) - Write a C Function that display Prime Numbers between Intervals (two numbers) by Making Function.
 
 
