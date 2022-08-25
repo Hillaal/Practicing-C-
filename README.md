@@ -65,4 +65,13 @@ Input 6, Output = 0 (Even)
 
 [Q-29](https://github.com/Hillaal/Practicing-C-/tree/main/Question-29) - Write a C Function that display Prime Numbers between Intervals (two numbers) by Making Function.
 
+[Q-30](https://github.com/Hillaal/Practicing-C-/tree/main/Question-30) - Write a C Function that swaps the value of two integer numbers.
 
+[Q-31](https://github.com/Hillaal/Practicing-C-/tree/main/Question-31) - You are designing a poster which prints out numbers with a unique
+style applied to each of them. The styling is based on the number of
+closed paths or holes present in a giver number. The number of holes
+that each of the digits from 0 to 9 have are equal to the number of closed
+paths in the digit. Their values are:
+1, 2, 3, 5 and 7 = 0 holes.
+0, 4, 6, and 9 = 1 hole.
+8 = 2 holes
