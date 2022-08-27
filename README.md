@@ -79,3 +79,25 @@ all of its digits. For example, the number 819 has 3 holes.
 #### Function Description <br>
 Complete the function countHoles. The function must return an integer
 denoting the total number of holes in num.
+<br>
+
+[Q-32](https://github.com/Hillaal/Practicing-C-/tree/main/Question-32) - Write a C function that returns 1 if the input number is a power of 2
+and return 0 if the input number is power of 2.
+For example: 0, 2 and 16 are power of 2.
+1, 10 and 30 are not power of 2
+
+[Q-33](https://github.com/Hillaal/Practicing-C-/tree/main/Question-33) - Write a C function that calculates the required heater activation time
+according to the input temperature of water.
+- if input temperature is from 0 to 30, then required heating time = 7
+mins.
+- if input temperature is from 30 to 60, then required heating time = 5
+mins.
+- if input temperature is from 60 to 90, then required heating time = 3
+mins.
+- if input temperature is more than 90, then required heating time = 1
+mins.
+- if temperature is invalid (more than 100), return 0
+Example:
+Input = 10  output = 7
+Input = 35  output = 5
+
