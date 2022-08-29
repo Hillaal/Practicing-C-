@@ -101,3 +101,7 @@ Example:
 Input = 10  output = 7
 Input = 35  output = 5
 
+
+[Q-34](https://github.com/Hillaal/Practicing-C-/tree/main/Question-34) - In this challenge write a function to add two floating numbers. Determine the integer floor of the sum. The floor is the truncated floatvalue, anything after the decimal point is dropped. For instance floor(1.1+3.05)=floor(4.15) = 4
+
+
