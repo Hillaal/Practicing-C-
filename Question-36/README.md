@@ -1,1 +1,1 @@
- ###  In this challenge write a function to add two floating numbers. Determine the integer floor of the sum. The floor is the truncated floatvalue, anything after the decimal point is dropped. For instance floor(1.1+3.05)=floor(4.15)=4
+ ###  Write a C function to reverse the binary of an 8-bits number. For example if the input number is 10001101 the output number should be 10110001.
