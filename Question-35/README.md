@@ -1,1 +1,1 @@
- ###  In this challenge write a function to add two floating numbers. Determine the integer floor of the sum. The floor is the truncated floatvalue, anything after the decimal point is dropped. For instance floor(1.1+3.05)=floor(4.15)=4
+ ###  Write a C Function that calculate the Fibonacci series using recursive method. The Fibonacci Series : 0,1,1,2,3,5,8,13,21,…
