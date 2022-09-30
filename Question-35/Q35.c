@@ -4,19 +4,15 @@ double Fibonacci(int x);
 
 
 int main(void){
+char * Array[] = { "ECP 621", "Embedded", "Software", "Development"};
 
-    long result;
-    int num;
+const char * * ptrArray = &Array;
 
-    printf("Enter Integer Number \n");
-    scanf("%d",&num);
 
-    result = Fibonacci(num);
 
-    printf("Result = %d \n",result);
 
-    getch();    /*to stop cmd from closing after running the .exe*/
 
+printf ("%d", sizeof(Array[1]));
     return 0;
 }
 
